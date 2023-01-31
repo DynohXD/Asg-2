@@ -1,6 +1,6 @@
 # ASG2
 
-<h1>Idea for Our Website - Chen Yu & Dynoh</h1>
+<h1>Idea for Our Website - Ong Chen Yu (S10243071) & Dynoh (S10242384) </h1>
 
 ## Design Process
 
