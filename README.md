@@ -19,15 +19,14 @@ Increasing user base and profits
 ## Potential features to include
 
 - Customer loyalty program
-
   - Credits that can be used when purchasing products
 
 - Roulette wheel
-
   - 8 slots of rewards, whichever slot the pointer lands on, the user receives it
 
 - Account Login form
   - Receive membership privileges such as discount on merchandise upon completing the form
+  - Admin : Update, delete info 
 
 ## Technologies used
 
