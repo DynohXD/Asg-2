@@ -1,8 +1,17 @@
 :root {
 
-    --cultured: hsl(0, 0%, 93%);
-    --white: hsl(0, 100%, 100%);
-    --onyx: hsl(0, 0%, 27%);
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --eerie-black: hsl(0, 0%, 13%);
+  --salmon-pink: hsl(353, 100%, 78%);
+  --sandy-brown: hsl(29, 90%, 65%);
+  --bittersweet: hsl(0, 100%, 70%);
+  --ocean-green: hsl(152, 51%, 52%);
+  --davys-gray: hsl(0, 0%, 33%);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 100%, 100%);
+  --onyx: hsl(0, 0%, 27%);
+
   
   
     --fs-1: 1.563rem;
@@ -72,6 +81,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
   
+/*----------------------------------------------------------------*/
 
 *, *::before, *::after {
     margin: 0;
@@ -198,7 +208,7 @@ html { font-size: 17px; }
   
   
 .container { max-width: 980px; }
-   
+  
       .header-user-actions {
       display: -webkit-box;
       display: -webkit-flex;
@@ -297,7 +307,6 @@ html { font-size: 17px; }
 
 }
 
-
 .header-main .container { gap: 80px; }
 
 .header-search-container { flex-grow: 1; }
@@ -331,13 +340,9 @@ border-radius: 20px;
 
 /* ------------------------- Banner -------------------------*/
 
-
 .banner { margin: 30px 0; }
 
 .slider-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -357,7 +362,6 @@ border-radius: 20px;
   position: relative;
   min-width: 100%;
   max-height: 450px;
-  aspect-ratio: 1 / 1;
   -webkit-border-radius: var(--border-radius-md);
           border-radius: var(--border-radius-md);
   overflow: hidden;
@@ -385,7 +389,7 @@ border-radius: 20px;
 }
 
 .banner-subtitle {
-  color: var(--salmon-pink);
+  color: goldenrod;
   font-size: var(--fs-7);
   font-weight: var(--weight-500);
   text-transform: capitalize;
@@ -404,10 +408,8 @@ border-radius: 20px;
 .banner-text { display: none; }
 
 .banner-btn {
-  background: var(--salmon-pink);
+  background: goldenrod;
   color: var(--white);
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   font-size: var(--fs-11);
   font-weight: var(--weight-600);
@@ -456,6 +458,7 @@ border-radius: 20px;
   .banner-btn { padding: 7px 20px; }
 }
 
+
 @media (min-width: 570px) {
   .slider-item { aspect-ratio: 4 / 2; }
 
@@ -467,16 +470,12 @@ border-radius: 20px;
     --fs-1: 2.375rem;
   }
 
-
   html { font-size: 17px; }
-
-
 
   .container {
     max-width: 750px;
     margin: auto;
   }
-
 
   .slider-item {
     aspect-ratio: auto;
