@@ -115,9 +115,9 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
     font: inherit;
   }
   
-  input::placeholder { font: inherit; }
+input::placeholder { font: inherit; }
   
-  body { background: var(--white); }
+body { background: var(--white); }
 
 .header-main { padding: 25px 0; }
 
@@ -153,7 +153,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 @media (min-width: 768px) {
-
 
 :root {
     --fs-1: 2.375rem;
@@ -197,8 +196,6 @@ html { font-size: 17px; }
 
 
 @media (min-width: 1024px) {
-
-    
 /*typography*/
 
 :root {
@@ -389,7 +386,7 @@ border-radius: 20px;
 }
 
 .banner-subtitle {
-  color: goldenrod;
+  color: var(--eerie-black);
   font-size: var(--fs-7);
   font-weight: var(--weight-500);
   text-transform: capitalize;
@@ -408,7 +405,7 @@ border-radius: 20px;
 .banner-text { display: none; }
 
 .banner-btn {
-  background: goldenrod;
+  background: var(--davys-gray);
   color: var(--white);
   width: max-content;
   font-size: var(--fs-11);
@@ -503,7 +500,6 @@ border-radius: 20px;
 
   .container { max-width: 980px; }
 
-
   .banner { margin-top: 0; }
 
   .slider-item { height: 380px; }
@@ -539,5 +535,53 @@ border-radius: 20px;
     max-width: 460px;
   }
 
+}
+
+/* --------------- Login daily button ---------------- */
+.category { margin-bottom: 30px; }
+
+.category-item ion-icon {
+  font-size: 50px;
+  color: lightgoldenrodyellow;
+}
+
+.category-item {
+  min-width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  border: 1px solid var(--cultured);
+  -webkit-border-radius: var(--border-radius-md);
+          border-radius: var(--border-radius-md);
+  scroll-snap-align: start;
+  background-color: var(--davys-gray)
+
+}
+
+.category-item:hover{
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+
+.category-content-box { width: 100%; }
+
+.category-item-title {
+  color: lightgoldenrodyellow;
+  font-size: 30px;
+  font-weight: var(--weight-600);
+  text-align: center;
+}
+
+
+.category-btn {
+  color: lightgoldenrodyellow;
+  font-size: var(--fs-9);
+  font-weight: var(--weight-500);
+  text-transform: capitalize;
+  text-align: center;
 }
 
