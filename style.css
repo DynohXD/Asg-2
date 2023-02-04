@@ -562,7 +562,7 @@ border-radius: 20px;
 }
 
 .category-item:hover{
-  transform: scale(0.9);
+  transform: scale(0.95);
   transition: 0.2s;
 }
 
