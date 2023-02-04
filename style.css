@@ -38,7 +38,7 @@
     --border-radius-sm: 5px;
   
 
-    --transition-timing: 0.2s ease;
+    --transition-timing: 0.3s ease;
   
   }
 
@@ -548,22 +548,17 @@ border-radius: 20px;
 .category-item {
   min-width: 100%;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 15px;
   border: 1px solid var(--cultured);
   -webkit-border-radius: var(--border-radius-md);
           border-radius: var(--border-radius-md);
-  scroll-snap-align: start;
-  background-color: var(--davys-gray)
-
+  background-color: var(--davys-gray);
+  transition: var(--transition-timing);
 }
 
 .category-item:hover{
-  transform: scale(0.95);
-  transition: 0.2s;
+  transition: var(--transition-timing);
+  background-color: goldenrod
 }
 
 
