@@ -1,21 +1,3 @@
-/*Login Page*/
-var x=document.getElementById('login');
-var y=document.getElementById('register');
-var z=document.getElementById('btn');
-function register()
-{
-    x.style.left='-400px';
-    y.style.left='50px';
-    z.style.left='110px';
-}
-function login()
-{
-    x.style.left='50px';
-    y.style.left='450px';
-    z.style.left='0px';
-}
-
-
 // nav menu (at the bottom for mobile view)
 const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
 const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
@@ -71,3 +53,25 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+
+
+// slider for banner
+const sliderContainer = document.querySelector('.slider-container');
+const sliderItems = document.querySelectorAll('.slider-item');
+let currentSlide = 0;
+const intervalTime = 5000;
+
+const nextSlide = () => {
+  sliderItems[currentSlide].style.display = 'none';
+  currentSlide = (currentSlide + 1) % sliderItems.length;
+  sliderItems[currentSlide].style.display = 'flex';
+};
+
+sliderItems[0].style.display = 'flex';
+setInterval(nextSlide, intervalTime);
+
+/*-------------------------------*/
+setTimeout(function() {
+  document.querySelector('.lottie-container').style.display = 'none';
+  document.querySelector('.content').style.display = 'block';
+}, 2650);

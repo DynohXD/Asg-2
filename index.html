@@ -14,6 +14,13 @@
 <!--Navbar Header-->
 <body>
 
+  <!--lottie animation when refreshed/loading-->
+  <div class="lottie-container">
+    <lottie-player src="https://assets4.lottiefiles.com/datafiles/Hc0DflKIkYg1j3u/data.json"  background="transparent"  speed="1.75"  style="width: 280px; height: 280px;"  loop  autoplay></lottie-player>
+  </div>
+<div class ="content">
+
+  <!--overlay when there are popups-->
   <div class="overlay" data-overlay></div>
 
     <header>
@@ -44,7 +51,6 @@
               <div class = "heart-shape">
                 <button class="action-btn">
                     <ion-icon name="heart"></ion-icon>                   
-
                 </button>
               </div>
 
@@ -53,8 +59,9 @@
 
               </button>
               
-              <button class='action-btn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"><ion-icon name="person-outline"></ion-icon></button>
+              <button class='action-btn'><ion-icon name="person-outline"></ion-icon>
               </button>
+
     
             </div>
 
@@ -471,107 +478,73 @@
     
   
     <!--Main Page-->
-    <main>
-      
-      <!--Login Form-->
-      <div class="full-page">
-        <div id='login-form'class='login-page'>
-          <div class="form-box">
-            <div class='button-box'>
-              <div id='btn'></div>
-              <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
-              <button type='button'onclick='register()'class='toggle-btn'>Register</button>                
-            </div>
-            <form id='login' class='input-group-login'>
-                <input type='text'class='input-field'placeholder='Email Id' required >
-                <input type='password'class='input-field'placeholder='Enter Password' required>
-                <input type='checkbox'class='check-box'><span>Remember Password</span>
-                <button type='submit'class='submit-btn'>Log in</button>
-            </form>
-            <form id='register' class='input-group-register'>
-                <input type='text'class='input-field'placeholder='First Name' required>
-                <input type='text'class='input-field'placeholder='Last Name ' required>
-                <input type='email'class='input-field'placeholder='Email Id' required>
-                <input type='password'class='input-field'placeholder='Enter Password' required>
-                <input type='password'class='input-field'placeholder='Confirm Password'  required>
-                <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
-                <button type='submit'class='submit-btn'>Register</button>
-            </form>
-          </div>
-        </div>
-      </div>
+    <main>      
 
       <!--Banner-->
+
       <div class="banner">
 
         <div class="container">
-  
+
           <div class="slider-container has-scrollbar">
-  
+
             <div class="slider-item">
-  
+
               <img src="walnutback.jpg" class="banner-img" alt="walnut banner">
-  
+
               <div class="banner-content">
-  
+
                 <p class="banner-subtitle">Welcome to Walnut.</p>
-  
+
                 <h2 class="banner-title">Cheapest rates available!</h2>
-  
-                <p class="banner-text">
-                  starting at &dollar; <b>1</b>.99!
-                </p>
-  
+
+                <p class="banner-text">starting at $1.99!</p>
+
                 <a href="#" class="banner-btn">Shop now</a>
-  
+
               </div>
-  
+
             </div>
 
             <div class="slider-item">
-  
+
               <img src="vday.jpg" class="banner-img" alt="vday banner">
-  
+
               <div class="banner-content">
-  
+
                 <p class="banner-subtitle">Valentine's Day Special</p>
-  
+
                 <h2 class="banner-title">Related products</h2>
-  
-                <p class="banner-text">
-                  starting at &dollar; <b>9</b>.99!
-                </p>
-  
+
+                <p class="banner-text">starting at $9.99!</p>
+
                 <a href="#" class="banner-btn">Shop now</a>
-  
+
               </div>
-  
             </div>
-  
+
             <div class="slider-item">
-  
+
               <img src="cny.jpg" class="banner-img" alt="cny banner">
-  
+
               <div class="banner-content">
-  
+
                 <p class="banner-subtitle">Sale Offer Ending Soon!</p>
-  
+
                 <h2 class="banner-title">CNY sale</h2>
-  
-                <p class="banner-text">
-                  starting at &dollar; <b>4</b>.99!
-                </p>
-  
+
+                <p class="banner-text">starting at $4.99!</p>
+
                 <a href="#" class="banner-btn">Shop now</a>
-  
+
               </div>
-  
+
             </div>
-  
+
           </div>
-  
+
         </div>
-  
+
       </div>
 
     
@@ -679,11 +652,57 @@
         <ul class="footer-nav-list">
         
           <li class="footer-nav-item">
+            <h2 class="nav-title">Follow us</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Instagram: @Walnut123</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">TikTok: @Walnut123</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Facebook: WALNUT.</a>
+          </li>
+        
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Sponsors</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Meelo</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Papsi</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cola Coka</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Kine</a>
+          </li>
+        
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
             <h2 class="nav-title">Services</h2>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
+            <a href="#" class="footer-nav-link"></a>
           </li>
         
           <li class="footer-nav-item">
@@ -713,11 +732,10 @@
           <li class="footer-nav-item flex">
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
+              
             </div>
+            <a href="#" class="footer-nav-link">123 Bukit Panjang Avenue 321 (677777)</a>
 
-            <address class="content">
-              123 Woodlands Singapore 612123
-            </address>
           </li>
 
           <li class="footer-nav-item flex">
@@ -757,11 +775,14 @@
     </div>
 
   </footer>
+</div>
 
     <script src = "index.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     
     
 </body>
