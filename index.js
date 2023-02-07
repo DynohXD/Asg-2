@@ -1,7 +1,5 @@
-'use strict';
 
-
-// mobile menu variables
+// nav menu (at the bottom for mobile view)
 const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
 const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
 const mobileMenuCloseBtn = document.querySelectorAll('[data-mobile-menu-close-btn]');
@@ -27,7 +25,7 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
 
 
 
-// accordion variables
+// accordion menu
 const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
 const accordion = document.querySelectorAll('[data-accordion]');
 
