@@ -329,6 +329,9 @@ html { font-size: 17px; }
     font-size: 35px;
     color: var(--onyx);
     padding: 5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
