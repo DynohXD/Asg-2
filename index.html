@@ -11,6 +11,7 @@
     rel="stylesheet">
 </head>
 
+<!--Navbar Header-->
 <body>
 
   <div class="overlay" data-overlay></div>
@@ -19,45 +20,46 @@
 
         <div class="header-main">
 
-            <div class="container">
-      
-              <a href="#" class="header-logo">
-                <h2>WALNUT.</h2>
-              </a>
-      
-              <div class="header-search-container">
-      
-                <input type="search" name="search" class="search-field" placeholder="Search for your product...">
-      
-                <button class="search-btn">
-                  <ion-icon name="search-outline"></ion-icon>
-                </button>
-      
-              </div>
-      
-              <div class="header-user-actions">
-                
-                <div class = "heart-shape">
-                <button class="action-btn">
-                    <ion-icon name="heart"></ion-icon>
-                    <span class="count">0</span>
-                  </div>                 
-                </button>
-      
-                  <button class="action-btn">
-                    <ion-icon name="cart-outline"></ion-icon>
-                    <span class="count">0</span>
-                  </button>
-
-                  <button class="action-btn">
-                    <ion-icon name="person-outline"></ion-icon>
-                  </button>
-     
-              </div>
-      
+          <div class="container">
+            
+            <!--Logo-->
+            <a href="#" class="header-logo">
+              <h2>WALNUT.</h2>
+            </a>
+            
+            <!--Search Bar-->
+            <div class="header-search-container">
+    
+              <input type="search" name="search" class="search-field" placeholder="Search for your product...">
+    
+              <button class="search-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+    
             </div>
-      
+            
+            <!--3 Left Buttons-->
+            <div class="header-user-actions">
+              
+              <div class = "heart-shape">
+                <button class="action-btn">
+                    <ion-icon name="heart"></ion-icon>                   
+
+                </button>
+              </div>
+
+              <button class="action-btn">
+                <ion-icon name="cart-outline"></ion-icon>
+
+              </button>
+              
+              <button class='action-btn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"><ion-icon name="person-outline"></ion-icon></button>
+              </button>
+    
+            </div>
+
           </div>
+        </div>
 
           <nav class="desktop-navigation-menu">
 
@@ -204,7 +206,7 @@
               <a href="#">
                 <button class="action-btn">
                   <ion-icon name="cart-outline"></ion-icon>          
-                  <span class="count">0</span>
+
                 </button>
               </a>
               
@@ -221,7 +223,7 @@
                 <div class = "heart-shape">
                   <button class="action-btn">
                       <ion-icon name="heart"></ion-icon>
-                      <span class="count">0</span>                                   
+                                  
                   </button>
                 </div>
               </a>
@@ -466,10 +468,40 @@
             </nav>
 
     </header>
-
-
     
+  
+    <!--Main Page-->
     <main>
+      
+      <!--Login Form-->
+      <div class="full-page">
+        <div id='login-form'class='login-page'>
+          <div class="form-box">
+            <div class='button-box'>
+              <div id='btn'></div>
+              <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+              <button type='button'onclick='register()'class='toggle-btn'>Register</button>                
+            </div>
+            <form id='login' class='input-group-login'>
+                <input type='text'class='input-field'placeholder='Email Id' required >
+                <input type='password'class='input-field'placeholder='Enter Password' required>
+                <input type='checkbox'class='check-box'><span>Remember Password</span>
+                <button type='submit'class='submit-btn'>Log in</button>
+            </form>
+            <form id='register' class='input-group-register'>
+                <input type='text'class='input-field'placeholder='First Name' required>
+                <input type='text'class='input-field'placeholder='Last Name ' required>
+                <input type='email'class='input-field'placeholder='Email Id' required>
+                <input type='password'class='input-field'placeholder='Enter Password' required>
+                <input type='password'class='input-field'placeholder='Confirm Password'  required>
+                <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='submit'class='submit-btn'>Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--Banner-->
       <div class="banner">
 
         <div class="container">
@@ -495,7 +527,7 @@
               </div>
   
             </div>
-  
+
             <div class="slider-item">
   
               <img src="vday.jpg" class="banner-img" alt="vday banner">
@@ -542,6 +574,9 @@
   
       </div>
 
+    
+
+      <!--Login Daily-->
       <div class="category">
 
         <a href="#" class="category-btn">

@@ -1,3 +1,20 @@
+/*Login Page*/
+var x=document.getElementById('login');
+var y=document.getElementById('register');
+var z=document.getElementById('btn');
+function register()
+{
+    x.style.left='-400px';
+    y.style.left='50px';
+    z.style.left='110px';
+}
+function login()
+{
+    x.style.left='50px';
+    y.style.left='450px';
+    z.style.left='0px';
+}
+
 
 // nav menu (at the bottom for mobile view)
 const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
@@ -25,7 +42,7 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
 
 
 
-// accordion menu
+// accordion variables
 const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
 const accordion = document.querySelectorAll('[data-accordion]');
 
