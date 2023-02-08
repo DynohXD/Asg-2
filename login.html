@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Homepage</title>
+  <meta name="description" content="E-commerce web - WALNUT.">
+  <link rel= "stylesheet" href="login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>  
+
+    <div class="full-page">
+
+        <div id='login-form'class='login-page'>
+
+            <div class="form-box">
+
+                <div class="top-box">
+
+                    <a href ="index.html">
+                        <div class="cross-button">
+                          <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </a>
+
+                    <a href="#" class="header-logo">
+                    <h2>WALNUT.</h2>
+                    </a>
+
+                    <a> </a>
+                </div>
+                
+
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+                    <input type='password'class='input-field'placeholder='Enter Password' required>
+                    <input type='checkbox'class='check-box'><span>Remember Password</span>
+                    <button type='submit'class='submit-btn'>Log in</button>
+                </form>
+                <form id='register' class='input-group-register'>
+                    <input type='text'class='input-field'placeholder='First Name' required>
+                    <input type='text'class='input-field'placeholder='Last Name ' required>
+                    <input type='email'class='input-field'placeholder='Email Id' required>
+                    <input type='password'class='input-field'placeholder='Enter Password' required>
+                    <input type='password'class='input-field'placeholder='Confirm Password'  required>
+                    <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src = "login.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
