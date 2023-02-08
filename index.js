@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // lottie animation at the bottom
   window.addEventListener('scroll', function() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      if (scrollTop + clientHeight >= scrollHeight - 1/4) {
+      if (scrollTop + clientHeight >= scrollHeight - 1 / 7) {
           setTimeout(() => {
               fetchProducts(
                   `https://api.escuelajs.co/api/v1/products?offset=${opset}&limit=5`
