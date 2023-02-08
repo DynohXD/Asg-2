@@ -202,7 +202,7 @@ main {
 }
 
 .header-logo { margin-bottom: 20px; 
-  color: goldenrod
+  color: goldenrod;
 }
 
 .header-search-container { position: relative; }
@@ -793,34 +793,41 @@ border-radius: 20px;
 
 .category-item ion-icon {
   font-size: 50px;
-  color: lightgoldenrodyellow;
+  color: goldenrod;
 }
 
 .category-item {
   min-width: 100%;
   display: flex;
   padding: 15px;
-  border: 1px solid var(--cultured);
+  border: 2px solid goldenrod;
   -webkit-border-radius: var(--border-radius-md);
           border-radius: var(--border-radius-md);
-  background-color: var(--davys-gray);
+  background-color: lightgoldenrodyellow;
   transition: 0.3s;
 }
 
 .category-item:hover{
   transition: 0.3s;
-  background-color: goldenrod
+  background-color: goldenrod;
+
 }
 
 
 .category-content-box { width: 100%; }
 
 .category-item-title {
-  color: lightgoldenrodyellow;
+  color: darkgoldenrod;
   font-size: 30px;
   font-weight: var(--weight-600);
   text-align: center;
 }
+
+.category-item-title:hover {
+  color: lightgoldenrodyellow;
+}
+
+
 
 @media  (max-width: 767px) {
 
@@ -1245,8 +1252,162 @@ border-radius: 20px;
 
 }
 
+/* ------------------- Products ----------------*/
 
-/*-------------------- footer ---------------------*/
+html {
+  font-size: 95%;
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-size: 39px;
+  text-align: center;
+  margin: 0 auto 50px;
+  position: relative;
+  line-height: 60px;
+  color: darkgoldenrod;
+  margin-bottom: 4%;
+  transform: translateY(60%);
+  background-color: lightgoldenrodyellow;
+}
+
+.title::after {
+  content: "";
+  background: goldenrod;
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.products-container {
+  max-width: 144rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.products {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.product {
+  background: lightgoldenrodyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product-content {
+  padding: 1rem 2rem;
+}
+
+.product .product-title {
+  font-size: 2rem;
+  color: darkgoldenrod;
+}
+
+.product-description {
+  text-align: justify;
+}
+
+.product .product-category{
+  color: goldenrod;
+}
+.product-title,
+.product-price-container,
+.product-description,
+.product-category {
+  padding: 0.5rem 0;
+}
+
+.product-price-container {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-to-cart {
+  background: goldenrod;
+  width: 6.5rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: white;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.add-to-cart ion-icon {
+  font-size: 2rem;
+  color: lightgoldenrodyellow;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.add-to-like {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: white;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.add-to-cart:hover {
+  background: gold;
+}
+
+
+.add-to-like ion-icon {
+  font-size: 3.5rem;
+  color: hsl(0, 100%, 70%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  transform: translateX(70%);
+}
+
+.add-to-like:hover ion-icon {
+  transform: translateX(70%) !important;
+}
+
+.add-to-like:hover ion-icon {
+  color: var(--salmon-pink)
+}
+
+.loader {
+  display: inline-flex;
+  width: 100%;
+  height: 20rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+
+/*-------------------- Footer ---------------------*/
 footer {
   background: var(--eerie-black);
   padding: 30px 0;
@@ -1288,7 +1449,7 @@ footer {
   color: var(--sonic-silver);
   font-size: var(--fs-7);
   text-transform: capitalize;
-  transition: var(--transition-timing);
+  transition: 0.3s;
 }
 
 .footer-nav-link:hover { color: goldenrod; }
