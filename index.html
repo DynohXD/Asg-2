@@ -14,13 +14,15 @@
 <!--Navbar Header-->
 <body>
 
-  <!--lottie animation when refreshed/loading-->
+  <!-- lottie animation when refreshed/loading -->
   <div class="lottie-container">
-    <lottie-player src="https://assets4.lottiefiles.com/datafiles/Hc0DflKIkYg1j3u/data.json"  background="transparent"  speed="1.75"  style="width: 280px; height: 280px;"  loop  autoplay></lottie-player>
+    <lottie-player src="https://assets4.lottiefiles.com/datafiles/Hc0DflKIkYg1j3u/data.json"  background="transparent"  
+    speed="1.75"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>
   </div>
+
 <div class ="content">
 
-  <!--overlay when there are popups-->
+  <!-- make background darker for mobile navigation -->
   <div class="overlay" data-overlay></div>
 
     <header>
@@ -37,7 +39,7 @@
             <!--Search Bar-->
             <div class="header-search-container">
     
-              <input type="search" name="search" class="search-field" placeholder="Search for your product...">
+              <input type="search" name="search" class="search-field" id="filterInput" placeholder="Search for your product...">
     
               <button class="search-btn">
                 <ion-icon name="search-outline"></ion-icon>
@@ -58,11 +60,14 @@
                 <ion-icon name="cart-outline"></ion-icon>
               </button>
               
-              <a href ="login.html">
-                <button class="action-btn">
-                  <ion-icon name="person-outline"></ion-icon>
-                </button>
-              </a>
+              <div class="person-shape">
+                <a href ="login.html">
+                  <button class="action-btn">
+                    <ion-icon name="person-outline"></ion-icon>
+                  </button>
+                </a>
+              </div>
+              
 
     
             </div>
@@ -577,15 +582,26 @@
       </div>
 
 
-            <!------- added test-top to debug js ----------------------------->
+            <!---------------- added test-top to debug js ---------------------->
 
             <div class="test-top">
               <button class="test-close-btn" data-mobile-menu-close-btn>
               </button>
             </div>
 
-            <!---------------------------------------------------------------->
+            <!-------------------------- Products -------------------------------------->
 
+            <div class="products-container">
+              <h1 class = "title">Products</h1>
+              <div class="products"></div>
+              <div class="loader">
+                <lottie-player src="https://assets4.lottiefiles.com/datafiles/Hc0DflKIkYg1j3u/data.json"  background="transparent"  
+                speed="1.75"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+              </div>
+          </div>
+      
+
+      
     </main>
 
     <footer>
@@ -668,8 +684,7 @@
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Facebook: WALNUT.</a>
           </li>
-        
-
+      
         </ul>
 
         <ul class="footer-nav-list">
@@ -785,6 +800,5 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    
     
 </body>
