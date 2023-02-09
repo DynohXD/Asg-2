@@ -23,7 +23,6 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
 }
 
 
-
 // accordion variables
 const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
 const accordion = document.querySelectorAll('[data-accordion]');
@@ -55,8 +54,6 @@ for (let i = 0; i < accordionBtn.length; i++) {
 }
 
 
-
-
 // slider for banner
 const sliderContainer = document.querySelector('.slider-container');
 const sliderItems = document.querySelectorAll('.slider-item');
@@ -69,11 +66,9 @@ const nextSlide = () => {
   sliderItems[currentSlide].style.display = 'flex';
 };
 
+
 sliderItems[0].style.display = 'flex';
 setInterval(nextSlide, intervalTime);
-
-
-
 
 
 // hide lottie animation when page is no longer loading for 2.65s
@@ -81,9 +76,6 @@ setTimeout(function() {
   document.querySelector('.lottie-container').style.display = 'none';
   document.querySelector('.content').style.display = 'block';
 }, 2650);
-
-
-
 
 
 // fetch api from fake api store
@@ -98,18 +90,16 @@ document.addEventListener('DOMContentLoaded', function() {
           if (data.ok) {
               let response = await data.json();
 
-              for (let i = 0; i < 55; i++) {
+              for (let i = 0; i < response.length; i++) {
                   let description = response[i].description;
                   let title = response[i].title;
                   products.innerHTML += `
      <div class="product">
-         <img src="${response[i].images[1]}" alt="${
-          response[i].category.name
-        }" class="product-img">
+         <img src="${response[i].images[1]}" alt="${response[i].category.name}" class="product-img">
          <div class="product-content">
-         <h2 class="product-title">${title.length > 50 ? title.substring(0, 50).concat(' ...') : title}</h2>
+         <h2 class="product-title">${title.length > 40 ? title.substring(0, 40).concat(' ...') : title}</h2>
          <h4 class="product-category">${response[i].category.name}</h4>
-         <p class="product-description">${description.length > 100 ? description.substring(0, 100).concat(' ...more') : description}</p>
+         <p class="product-description">${description.length > 60 ? description.substring(0, 60).concat(' ...more') : description}</p>
          <div class="product-price-container">
              <h3 class="product-price">$${response[i].price}</h3>
              <a href="#!" data-productId="${response[i].id}" class="add-to-like"><ion-icon name="heart"></ion-icon></a>
@@ -127,15 +117,44 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   fetchProducts(url);
 
-// lottie animation at the bottom
+
+// lottie animation at the bottom, loads more upon scrolling
   window.addEventListener('scroll', function() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      if (scrollTop + clientHeight >= scrollHeight - 1 / 7) {
+      if (scrollTop + clientHeight >= scrollHeight - 1 / 4) {
           setTimeout(() => {
               fetchProducts(
-                  `https://api.escuelajs.co/api/v1/products?offset=${opset}&limit=5`
+                  `https://api.escuelajs.co/api/v1/products?offset=${opset}&limit=5` // pagination URL
               );
           }, 1000);
       }
   });
 });
+
+
+// search bar functions upon keyup i.e typing
+let filterInput = document.getElementById("filterInput");
+
+filterInput.addEventListener('keyup', filterProducts);
+
+function filterProducts(){
+    let filterValue = filterInput.value.toUpperCase();
+    let products = document.querySelectorAll('.product');
+    console.log(filterValue);
+
+    for (let i = 0; i < products.length; i++){
+        let title = products[i].querySelector('.product-title');
+
+        if(title.innerHTML.toUpperCase().indexOf(filterValue) > -1)
+        {
+            products[i].style.display = "initial";
+        }
+        else
+        {
+            products[i].style.display = "none";
+        }
+    }
+}
+
+
+
