@@ -11,6 +11,7 @@
  - Products for shop
  - Filter by category (Navigations)
  - Filter by product name (Search Bar)
+ - Loading animation with scrolling
 4. Lottie Animations
 
 ### Dynoh
@@ -77,7 +78,7 @@ This is intended for customers to go on the site to item they wish for because t
 
 ### Content
 - Some options been taken from [Carousell](https://www.carousell.sg/).
-- References some of the Javascript codes have been taken from [Stack Overflow](https://stackoverflow.com/)
+- References some of the Javascript codes for homepage have been taken from [Stack Overflow](https://stackoverflow.com/)
 - References for some of the CSS codes have been taken from [W3Schools](https://www.w3schools.com/)
 - [Lottie Animations](https://lottiefiles.com/search?q=loading&category=animations&animations-sort=popular)
 

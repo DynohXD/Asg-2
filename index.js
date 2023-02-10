@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (data.ok) {
               let response = await data.json();
 
-              for (let i = 0; i < response.length; i++) {
+              for (let i = 1; i < response.length; i++) {
                   let description = response[i].description;
                   let title = response[i].title;
                   products.innerHTML += `
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // lottie animation at the bottom, loads more upon scrolling
   window.addEventListener('scroll', function() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      if (scrollTop + clientHeight >= scrollHeight - 1 / 2) {
+      if (scrollTop + clientHeight >= scrollHeight - 1) {
           setTimeout(() => {
               fetchProducts(
                   `https://api.escuelajs.co/api/v1/products?offset=${opset}&limit=5` // pagination URL
