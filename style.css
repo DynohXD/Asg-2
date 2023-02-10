@@ -1,18 +1,11 @@
 :root {
-
-
   --sonic-silver: hsl(0, 0%, 47%);
   --eerie-black: hsl(0, 0%, 13%);
-
-
   --bittersweet: hsl(0, 100%, 70%);
-
   --davys-gray: hsl(0, 0%, 33%);
   --cultured: hsl(0, 0%, 93%);
   --onyx: hsl(0, 0%, 27%);
-
-  
-  
+ 
     --fs-1: 1.563rem;
     --fs-2: 1.375rem;
     --fs-3: 1.25rem;
@@ -25,20 +18,14 @@
     --fs-10: 0.688rem;
     --fs-11: 0.625rem;
   
-
     --weight-300: 300;
     --weight-400: 400;
     --weight-500: 500;
     --weight-600: 600;
     --weight-700: 700;
   
-
     --border-radius-md: 10px;
     --border-radius-sm: 5px;
-  
-
-    --transition-timing: 0.3s ease;
-  
   }
 
 /* lottie animation when refreshed/loading */ 
@@ -103,32 +90,32 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
     box-sizing: border-box;
   }
   
-  a { text-decoration: none; }
-  
-  li { list-style: none; }
-  
-  button {
-    background: none;
-    font: inherit;
-    border: none;
-    cursor: pointer;
-  }
-  
-  img, ion-icon, button, a { display: block; }
-  
-  span { display: inline-block; }
-  
-  html {
-    font-family: "Poppins", sans-serif;
-    overscroll-behavior: contain;
-  }
-  
-  input {
-    display: block;
-    width: 100%;
-    font: inherit;
-  }
-  
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+button {
+  background: none;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+img, ion-icon, button, a { display: block; }
+
+span { display: inline-block; }
+
+html {
+  font-family: "Poppins", sans-serif;
+  overscroll-behavior: contain;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font: inherit;
+}
+
 input::placeholder { font: inherit; }
   
 body { background: white; }
@@ -438,7 +425,7 @@ border-radius: 20px;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 150px;
+  gap: 90px;
   margin-top: 12px;
 }
 
@@ -784,20 +771,6 @@ border-radius: 20px;
   .slider-item:last-child .banner-img { -o-object-position: top; object-position: top; }
 }
 
-@media (min-width: 1400px) {
-
-  html { font-size: 18px; }
-
-  .container { max-width: 1350px; }
-
-  .slider-item { height: 450px; }
-
-  .banner-content {
-    left: 110px;
-    max-width: 460px;
-  }
-
-}
 
 
 /* --------------- Login daily button ---------------- */
@@ -822,8 +795,8 @@ border-radius: 20px;
 
 .category-item:hover{
   transition: 0.3s;
-  background-color: goldenrod;
-
+  transform: scale(0.97);
+  cursor: pointer;
 }
 
 
@@ -836,9 +809,6 @@ border-radius: 20px;
   text-align: center;
 }
 
-.category-item-title:hover {
-  color: lightgoldenrodyellow;
-}
 
 
 @media  (max-width: 767px) {
@@ -1255,13 +1225,9 @@ border-radius: 20px;
 @media (min-width: 1024px) { .mobile-bottom-navigation { display: none; } }
 
 @media (max-width: 1024px) { 
-
   .desktop-navigation-menu { display: none }
 
   .header-user-actions .action-btn { display: none; }
-
-
-
 }
 
 /* ------------------- Products ----------------*/
@@ -1297,7 +1263,7 @@ html {
 
 
 .products-container {
-  max-width: 144rem;
+  max-width: 100rem;
   padding: 0 2rem;
   margin: 0 auto;
   overflow: hidden;
@@ -1557,7 +1523,4 @@ footer {
     width: calc(33.33% - 15px);
     flex-grow: 1;
   }
-
-  .footer-nav-list:not(:last-child) { margin-bottom: 0; }
-
 }

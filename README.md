@@ -19,14 +19,18 @@ Increasing user base and profits
 ## Potential features to include
 
 - Customer loyalty program
-  - Credits that can be used when purchasing products
 
+  - Credits that can be used when purchasing products
 
 - Account Login form
   - Receive membership privileges such as discount on merchandise upon completing the form
-  - Admin : Update, delete info 
+  - Admin : Update, delete info
 
 ## Technologies used
+
+- [Platzi Fake Store API](https://fakeapi.platzi.com/)
+  - Fetched API which has products that have been created. I accessed the corresponding values by downloading a JSON format extension to parse the raw data
+  - It has over 200 products
 
 ## Testing
 
