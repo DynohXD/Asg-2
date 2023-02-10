@@ -96,3 +96,5 @@ This is intended for customers to go on the site to item they wish for because t
 ### Acknowledgements
 - This website is inspired by [Shopee](https://shopee.sg/), [Lazada](https://www.lazada.sg/) and [Carousell](https://www.carousell.sg/).
 
+### GITHUB Link
+- https://github.com/DynohXD/Asg-2.git
