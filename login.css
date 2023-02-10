@@ -115,7 +115,19 @@
 	outline:none;
 	background: transparent;
 }
-.submit-btn
+.submit-btn-login
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: goldenrod;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.submit-btn-create
 {
 	width: 85%;
 	padding: 10px 30px;
