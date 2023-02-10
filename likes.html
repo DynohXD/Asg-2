@@ -4,7 +4,7 @@
   <meta charset = "UTF-8">
   <title>Homepage</title>
   <meta name="description" content="E-commerce web - WALNUT.">
-  <link rel= "stylesheet" href="style.css">
+  <link rel= "stylesheet" href="likes.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -13,13 +13,6 @@
 
 <!--Navbar Header-->
 <body>
-
-  <!-- lottie animation when refreshed/loading -->
-  <div class="lottie-container">
-    <lottie-player src="https://assets4.lottiefiles.com/datafiles/Hc0DflKIkYg1j3u/data.json"  background="transparent"  
-    speed="1.75"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>
-  </div>
-
 <div class ="content">
 
   <!-- make background darker for mobile navigation -->
@@ -52,9 +45,9 @@
 
               <div class = "heart-shape">
                 <a href="likes.html">
-                  <button class="action-btn">
-                      <ion-icon name="heart"></ion-icon>                   
-                  </button>
+                    <button class="action-btn">
+                        <ion-icon name="heart"></ion-icon>                   
+                    </button>
                 </a>
               </div>
               
@@ -73,6 +66,8 @@
                   </button>
                 </a>
               </div>
+              
+
     
             </div>
 
@@ -86,7 +81,7 @@
               <ul class="desktop-menu-category-list">
       
                 <li class="menu-category">
-                  <a href="#" class="menu-title">Home</a>
+                  <a href="index.html" class="menu-title">Home</a>
                 </li>
       
                 <li class="menu-category">
@@ -121,7 +116,7 @@
                     <ul class="dropdown-panel-list">
       
                       <li class="menu-title" >
-                        <a href="#!">Women</a>
+                        <a href="#">Women</a>
                       </li>
       
                       <li class="panel-list-item">
@@ -145,7 +140,7 @@
                     <ul class="dropdown-panel-list">
       
                       <li class="menu-title">
-                        <a href="#!">Technology</a>
+                        <a href="#">Technology</a>
                       </li>
       
                       <li class="panel-list-item">
@@ -153,15 +148,15 @@
                       </li>
       
                       <li class="panel-list-item">
-                        <a href="#!">Gadgets</a>
+                        <a href="#">Gadgets</a>
                       </li>
       
                       <li class="panel-list-item">
-                        <a href="#!">Computers & Phones</a>
+                        <a href="#">Computers & Phones</a>
                       </li>
       
                       <li class="panel-list-item">
-                        <a href="#!">Others</a>
+                        <a href="#">Others</a>
                       </li>
       
                     </ul>
@@ -255,20 +250,20 @@
                 <ion-icon name="menu-outline"></ion-icon>
               </button>
               
-              <a href="cart.html">
+              <a href="cart.html" data-mobile-menu-open-btn>
                 <button class="action-btn">
                   <ion-icon name="cart-outline"></ion-icon>          
 
                 </button>
               </a>
                       
-              <a href="index.html">
+              <a href="index.html" data-mobile-menu-open-btn>
                 <button class="action-btn">
                   <ion-icon name="home-outline"></ion-icon>
                 </button>
               </a>
                             
-              <a href = "likes.html">
+              <a href = "likes.html" data-mobile-menu-open-btn>
                 <div class = "heart-shape">
                   <button class="action-btn">
                       <ion-icon name="heart"></ion-icon>           
@@ -512,121 +507,40 @@
   
     <!--Main Page-->
     <main>      
-
-      <!--Banner-->
-
-      <div class="banner">
-
-        <div class="container">
-
-          <div class="slider-container has-scrollbar">
-
-            <div class="slider-item">
-
-              <img src="walnutback.jpg" class="banner-img" alt="walnut banner">
-
-              <div class="banner-content">
-
-                <p class="banner-subtitle">Welcome to Walnut.</p>
-
-                <h2 class="banner-title">Cheapest rates available!</h2>
-
-                <p class="banner-text">starting at $1.99!</p>
-
-                <a href="#" class="banner-btn">Shop now</a>
-
-              </div>
-
+        <div class="wrapper">
+            <h1>Shopping Cart</h1>
+            <div class="project">
+                <div class="shop">
+                    <div class="box">
+                        <img src="https://i.pinimg.com/736x/e8/cc/7a/e8cc7ab3f5811fc222975f271245f661.jpg">
+                        <div class="content">
+                            <h3>Women Lipsticks</h3>
+                            <h4>Price: $40</h4>
+                            <p class="unit">Quantity: <input name="" value="2"></p>
+                            <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://www.pdffiller.com/preview/30/398/30398523.png">
+                        <div class="content">
+                            <h3>Withdrawal Form</Form></h3>
+                            <h4>Price: $40</h4>
+                            <p class="unit">Quantity: <input name="" value="1"></p>
+                            <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="https://www.pngitem.com/pimgs/m/184-1845412_shrek-meme-png-transparent-png.png">
+                        <div class="content">
+                            <h3>Samsung Mobile</h3>
+                            <h4>Price: $250</h4>
+                            <p class="unit">Quantity: <input name="" value="0"></p>
+                            <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="slider-item">
-
-              <img src="vday.jpg" class="banner-img" alt="vday banner">
-
-              <div class="banner-content">
-
-                <p class="banner-subtitle">Valentine's Day Special</p>
-
-                <h2 class="banner-title">Related products</h2>
-
-                <p class="banner-text">starting at $9.99!</p>
-
-                <a href="#" class="banner-btn">Shop now</a>
-
-              </div>
-            </div>
-
-            <div class="slider-item">
-
-              <img src="cny.jpg" class="banner-img" alt="cny banner">
-
-              <div class="banner-content">
-
-                <p class="banner-subtitle">Sale Offer Ending Soon!</p>
-
-                <h2 class="banner-title">CNY sale</h2>
-
-                <p class="banner-text">starting at $4.99!</p>
-
-                <a href="#" class="banner-btn">Shop now</a>
-
-              </div>
-
-            </div>
-
-          </div>
-
         </div>
-
-      </div>
-
-    
-
-      <!--Login Daily-->
-      <div class="category">
-
-        <a href="#" class="category-btn">
-
-          <div class="container"> 
-
-            <div class="category-item">
-
-              <ion-icon name="gift-outline"></ion-icon>
-
-              <div class="category-content-box">
-
-                <h3 class="category-item-title">Click here for Daily Member Login Rewards</h3>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </a>
-        
-      </div>
-
-
-            <!---------------- added test-top to debug js ---------------------->
-
-            <div class="test-top">
-              <button class="test-close-btn" data-mobile-menu-close-btn>
-              </button>
-            </div>
-
-            <!-------------------------- Products -------------------------------------->
-
-            <div class="products-container">
-              <h1 class = "title">Products</h1>
-              <div class="products"></div>
-              <div class="loader">
-                <lottie-player src="https://assets4.lottiefiles.com/datafiles/Hc0DflKIkYg1j3u/data.json"  background="transparent"  
-                speed="1.75"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
-              </div>
-          </div>
-      
-
       
     </main>
 
@@ -820,7 +734,7 @@
   </footer>
 </div>
 
-    <script src = "index.js"></script>
+    <script src = "likes.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
