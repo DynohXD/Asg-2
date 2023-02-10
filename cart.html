@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Homepage</title>
+  <meta name="description" content="E-commerce web - WALNUT.">
+  <link rel= "stylesheet" href="cart.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<!--Navbar Header-->
+<body>
+<div class ="content">
+
+  <!-- make background darker for mobile navigation -->
+  <div class="overlay" data-overlay></div>
+
+    <header>
+
+        <div class="header-main">
+
+          <div class="container">
+            
+            <!--Logo-->
+            <a href="#" class="header-logo">
+              <h2>WALNUT.</h2>
+            </a>
+            
+            <!--Search Bar-->
+            <div class="header-search-container">
+    
+              <input type="search" name="search" class="search-field" id="filterInput" placeholder="Search for your product...">
+    
+              <button class="search-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+    
+            </div>
+            
+            <!--3 Left Buttons-->
+            <div class="header-user-actions">
+
+              <div class = "heart-shape">
+                <button class="action-btn">
+                    <ion-icon name="heart"></ion-icon>                   
+                </button>
+              </div>
+              
+              <div class="person-shape">
+                <a href ="Cart.html">
+                  <button class="action-btn">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+                </a>
+              </div>
+
+              <div class="person-shape">
+                <a href ="login.html">
+                  <button class="action-btn">
+                    <ion-icon name="person-outline"></ion-icon>
+                  </button>
+                </a>
+              </div>
+              
+
+    
+            </div>
+
+          </div>
+        </div>
+
+          <nav class="desktop-navigation-menu">
+
+            <div class="container">
+      
+              <ul class="desktop-menu-category-list">
+      
+                <li class="menu-category">
+                  <a href="index.html" class="menu-title">Home</a>
+                </li>
+      
+                <li class="menu-category">
+                  <p class="menu-title">Categories</p>
+      
+                  <div class="dropdown-panel">
+      
+                    <ul class="dropdown-panel-list">
+      
+                      <li class="menu-title" >
+                        <a href="#">Men</a>
+                      </li>     
+      
+                      <li class="panel-list-item">
+                        <a href="#!">Clothes</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#!">Shoes</a>
+                      </li>
+
+                      <li class="panel-list-item">
+                        <a href="#!">Accessories</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#!">Others</a>
+                      </li>
+          
+                    </ul>
+      
+                    <ul class="dropdown-panel-list">
+      
+                      <li class="menu-title" >
+                        <a href="#">Women</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#!">Clothes</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#!">Shoes</a>
+                      </li>
+
+                      <li class="panel-list-item">
+                        <a href="#!">Accessories</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#!">Others</a>
+                      </li>
+         
+                    </ul>
+      
+                    <ul class="dropdown-panel-list">
+      
+                      <li class="menu-title">
+                        <a href="#">Technology</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#">Electronics</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#">Gadgets</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#">Computers & Phones</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#">Others</a>
+                      </li>
+      
+                    </ul>
+      
+                    <ul class="dropdown-panel-list">
+      
+                      <li class="menu-title">
+                        <a href="#">Everything else</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#">All</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#">Un nuevo nombre</a>
+                      </li>
+      
+                      <li class="panel-list-item">
+                        <a href="#">Others</a>
+                      </li>
+            
+                    </ul>
+      
+                  </div>
+
+                </li>
+
+                <li class="menu-category">
+                  <a href="#" class="menu-title">Announcements</a>
+                </li>
+
+                <li class="menu-category">
+                  <a href="#!" class="menu-title">Language</a>
+      
+                  <ul class="dropdown-list">
+      
+                    <li class="dropdown-item">
+                      <a href="#">English</a>
+                    </li>
+      
+                    <li class="dropdown-item">
+                      <a href="#">Mandarin</a>
+                    </li>
+      
+                    <li class="dropdown-item">
+                      <a href="#">Malay</a>
+                    </li>
+      
+                    <li class="dropdown-item">
+                      <a href="#">Tamil</a>
+                    </li>
+      
+                  </ul>
+                </li>
+
+                <li class="menu-category">
+                  <a href="#!" class="menu-title">Services</a>
+      
+                  <ul class="dropdown-list">
+      
+                    <li class="dropdown-item">
+                      <a href="#">Terms & Conditions</a>
+                    </li>
+      
+                    <li class="dropdown-item">
+                      <a href="#">Refund policies</a>
+                    </li>
+      
+                    <li class="dropdown-item">
+                      <a href="#">Technical SUpport</a>
+                    </li>
+      
+                    <li class="dropdown-item">
+                      <a href="#">Suggestions</a>
+                    </li>
+      
+                  </ul>
+                </li>
+                
+
+
+              </ul>
+      
+            </div>
+      </nav>
+            <div class="mobile-bottom-navigation">
+
+
+              <button class="action-btn" data-mobile-menu-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+              </button>
+              
+              <a href="#">
+                <button class="action-btn">
+                  <ion-icon name="cart-outline"></ion-icon>          
+
+                </button>
+              </a>
+                      
+              <a href="#">
+                <button class="action-btn">
+                  <ion-icon name="home-outline"></ion-icon>
+                </button>
+              </a>
+                            
+              <a href = "#">
+                <div class = "heart-shape">
+                  <button class="action-btn">
+                      <ion-icon name="heart"></ion-icon>
+                                  
+                  </button>
+                </div>
+              </a>
+              
+              
+              <a href ="login.html">
+                <button class="action-btn" data-mobile-menu-open-btn>
+                  <ion-icon name="person-outline"></ion-icon>
+                </button>
+              </a>
+              
+        
+            </div>
+            
+        
+            <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+              <div class="menu-top">
+                <h2 class="menu-title">Categories</h2>
+        
+                <button class="menu-close-btn" data-mobile-menu-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+              </div>
+        
+              <ul class="mobile-menu-category-list">
+        
+                <li class="menu-category">
+        
+                  <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Men</p>
+        
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+        
+                  <ul class="submenu-category-list" data-accordion>
+        
+        
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Clothes</a>
+                    </li>
+                
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Shoes</a>
+                    </li>
+
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Accessories</a>
+                    </li>
+
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Others</a>
+                    </li>
+        
+                  </ul>
+        
+                </li>
+        
+                <li class="menu-category">
+        
+                  <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Women</p>
+        
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+        
+                  <ul class="submenu-category-list" data-accordion>
+        
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Clothes</a>
+                    </li>
+                
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Shoes</a>
+                    </li>
+
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Accessories</a>
+                    </li>
+
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Others</a>
+                    </li>
+        
+                  </ul>
+        
+                </li>
+        
+                <li class="menu-category">
+        
+                  <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Technology</p>
+        
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+        
+                  <ul class="submenu-category-list" data-accordion>
+        
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Electronics</a>
+                    </li>
+        
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Gadgets</a>
+                    </li>
+        
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Tablets & Phones</a>
+                    </li>
+        
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Computer</a>
+                    </li>
+        
+                  </ul>
+        
+                </li>
+        
+                <li class="menu-category">
+        
+                  <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Everything else</p>
+        
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                    </div>
+                  </button>
+        
+                  <ul class="submenu-category-list" data-accordion>
+        
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">All</a>
+                    </li>
+        
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Un nuevo nombre</a>
+                    </li>
+
+                    <li class="submenu-category">
+                      <a href="#" class="submenu-title">Others</a>
+                    </li>
+               
+                  </ul>
+        
+                </li>
+
+        
+                <li class="menu-category">
+                  <a href="#" class="menu-title">Announcements</a>
+                </li>
+        
+              </ul>
+        
+              <div class="menu-bottom">
+        
+                <ul class="menu-category-list">
+        
+                  <li class="menu-category">
+        
+                    <button class="accordion-menu" data-accordion-btn>
+                      <p class="menu-title">Language</p>
+        
+                      <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                    </button>
+        
+                    <ul class="submenu-category-list" data-accordion>
+        
+                      <li class="submenu-category">
+                        <a href="#" class="submenu-title">English</a>
+                      </li>
+        
+                      <li class="submenu-category">
+                        <a href="#" class="submenu-title">Mandarin</a>
+                      </li>
+        
+                      <li class="submenu-category">
+                        <a href="#" class="submenu-title">Malay</a>
+                      </li>
+
+                      <li class="submenu-category">
+                        <a href="#" class="submenu-title">Tamil</a>
+                      </li>
+        
+                    </ul>
+        
+                  </li>
+
+                  <li class="menu-category">
+        
+                    <button class="accordion-menu" data-accordion-btn>
+                      <p class="menu-title">Services</p>
+        
+                      <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+                    </button>
+        
+                    <ul class="submenu-category-list" data-accordion>
+        
+                      <li class="submenu-category">
+                        <a href="#" class="submenu-title">Terms & Conditions</a>
+                      </li>
+        
+                      <li class="submenu-category">
+                        <a href="#" class="submenu-title">Refund Policies</a>
+                      </li>
+
+                      <li class="submenu-category">
+                        <a href="#" class="submenu-title">Technical Support</a>
+                      </li>
+
+                      <li class="submenu-category">
+                        <a href="#" class="submenu-title">Suggestions</a>
+                      </li>
+        
+                    </ul>
+        
+                  </li>
+        
+                </ul>
+        
+
+        
+      
+        
+            </nav>
+
+    </header>
+    
+  
+    <!--Main Page-->
+    <main>      
+        <div class="wrapper">
+            <h1>Shopping Cart</h1>
+            <div class="project">
+                <div class="shop">
+                    <div class="box">
+                        <img src="cny.jpg">
+                        <div class="content">
+                            <h3>Women Lipsticks</h3>
+                            <h4>Price: $40</h4>
+                            <p class="unit">Quantity: <input name="" value="2"></p>
+                            <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="cny.jpg">
+                        <div class="content">
+                            <h3>Man's Watches</h3>
+                            <h4>Price: $40</h4>
+                            <p class="unit">Quantity: <input name="" value="1"></p>
+                            <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="cny.jpg">
+                        <div class="content">
+                            <h3>Samsung Mobile</h3>
+                            <h4>Price: $250</h4>
+                            <p class="unit">Quantity: <input name="" value="0"></p>
+                            <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-bar">
+                    <p><span>Subtotal</span> <span>$120</span></p>
+                    <hr>
+                    <p><span>Tax (5%)</span> <span>$6</span></p>
+                    <hr>
+                    <p><span>Shipping</span> <span>$15</span></p>
+                    <hr>
+                    <p><span>Total</span> <span>$141</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+
+    <footer>
+
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow us</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Instagram: @Walnut123</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">TikTok: @Walnut123</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Facebook: WALNUT.</a>
+          </li>
+      
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Sponsors</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Meelo</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Papsi</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cola Coka</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Kine</a>
+          </li>
+        
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link"></a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+              
+            </div>
+            <a href="#" class="footer-nav-link">123 Bukit Panjang Avenue 321 (677777)</a>
+
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="#" class="footer-nav-link">1234 5678</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="#" class="footer-nav-link">hello123@gmail.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="payment.png" alt="payment methods" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">WALNUT.</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+</div>
+
+    <script src = "cart.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+</body>
