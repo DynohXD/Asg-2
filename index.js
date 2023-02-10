@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // lottie animation at the bottom, loads more upon scrolling
   window.addEventListener('scroll', function() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      if (scrollTop + clientHeight >= scrollHeight - 1 / 4) {
+      if (scrollTop + clientHeight >= scrollHeight - 1 / 2) {
           setTimeout(() => {
               fetchProducts(
                   `https://api.escuelajs.co/api/v1/products?offset=${opset}&limit=5` // pagination URL
