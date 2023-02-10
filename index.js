@@ -38,12 +38,9 @@ for (let i = 0; i < accordionBtn.length; i++) {
       if (clickedBtn) break;
 
       if (accordion[i].classList.contains('active')) {
-
         accordion[i].classList.remove('active');
         accordionBtn[i].classList.remove('active');
-
       }
-
     }
 
     this.nextElementSibling.classList.toggle('active');
@@ -156,5 +153,32 @@ function filterProducts(){
     }
 }
 
+// filter products by clicking on category name
+let cats = document.querySelectorAll('.panel-list-item, .submenu-title');
+
+for (let i = 0; i < cats.length; i++) {
+    cats[i].addEventListener('click', filterSubcategory);
+}
+
+function filterSubcategory(e) {
+  let filterValue = e.target.innerHTML.toUpperCase();
+  let products = document.querySelectorAll('.product');
+
+  if (filterValue === "ALL") {
+      for (let i = 0; i < products.length; i++) {
+          products[i].style.display = "initial";
+      }
+  } else {
+      for (let i = 0; i < products.length; i++) {
+          let cat = products[i].querySelector('.product-category');
+
+          if (cat.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+              products[i].style.display = "initial";
+          } else {
+              products[i].style.display = "none";
+          }
+      }
+  }
+}
 
 
